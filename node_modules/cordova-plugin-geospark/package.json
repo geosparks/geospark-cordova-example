@@ -1,0 +1,54 @@
+{
+  "_from": "cordova-plugin-geospark",
+  "_id": "cordova-plugin-geospark@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-PAUtKmQzUmVVgy21hxx4OzRhiV/kKNgsEfDbImpf4DfDnxDSHkn57PfAJ01WdGDS40KoARYAcJY4yGlmWDqlsA==",
+  "_location": "/cordova-plugin-geospark",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-geospark",
+    "name": "cordova-plugin-geospark",
+    "escapedName": "cordova-plugin-geospark",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-geospark/-/cordova-plugin-geospark-1.0.0.tgz",
+  "_shasum": "38af031e636ecd9b8f4814862c0745cdf2d6a5ea",
+  "_spec": "cordova-plugin-geospark",
+  "_where": "/Users/ekambaram/Projects/GeoSpark_Cordova/CordovaExample",
+  "bugs": {
+    "url": "https://github.com/geosparks/cordova-plugin-geospark/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-geospark",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Location tracking SDK",
+  "homepage": "https://geospark.co",
+  "keywords": [
+    "ecosystem:cordova",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android",
+    "cordova:plugin"
+  ],
+  "license": "Apache-2.0",
+  "name": "cordova-plugin-geospark",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geosparks/cordova-plugin-geospark.git"
+  },
+  "version": "1.0.0"
+}

@@ -1,0 +1,56 @@
+{
+  "_from": "git+https://github.com/tomloprod/cordova-plugin-headercolor.git",
+  "_id": "cordova-plugin-headercolor@1.0.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-headercolor",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/tomloprod/cordova-plugin-headercolor",
+    "rawSpec": "https://github.com/tomloprod/cordova-plugin-headercolor",
+    "saveSpec": "git+https://github.com/tomloprod/cordova-plugin-headercolor.git",
+    "fetchSpec": "https://github.com/tomloprod/cordova-plugin-headercolor.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/tomloprod/cordova-plugin-headercolor.git#0dd0af0b552ba31bb56dd427c96f3434842ff9ec",
+  "_spec": "https://github.com/tomloprod/cordova-plugin-headercolor",
+  "_where": "/Users/geosparkdevice/Documents/cordova/CordovaExample",
+  "author": {
+    "name": "tomloprod"
+  },
+  "bugs": {
+    "url": "https://github.com/tomloprod/cordova-plugin-headercolor/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-headercolor",
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "HeaderColor is a cordova plugin to change color of header in multitask view. Android devices.",
+  "homepage": "https://github.com/tomloprod/cordova-plugin-headercolor#readme",
+  "keywords": [
+    "cordova",
+    "ionic",
+    "header",
+    "color",
+    "android"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-headercolor",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomloprod/cordova-plugin-headercolor.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}

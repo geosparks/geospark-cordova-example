@@ -1,0 +1,89 @@
+{
+  "_from": "cordova-plugin-livereload",
+  "_id": "cordova-plugin-livereload@1.2.2",
+  "_inBundle": false,
+  "_integrity": "sha1-Z8qvu+0ecpS6WnDZzsg/f0NBhsA=",
+  "_location": "/cordova-plugin-livereload",
+  "_phantomChildren": {
+    "abbrev": "1.1.1",
+    "inflight": "1.0.6",
+    "inherits": "2.0.4",
+    "lodash-node": "2.4.1",
+    "minimatch": "3.0.4",
+    "once": "1.4.0",
+    "path-is-absolute": "1.0.1",
+    "xmldom": "0.1.27"
+  },
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-livereload",
+    "name": "cordova-plugin-livereload",
+    "escapedName": "cordova-plugin-livereload",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-livereload/-/cordova-plugin-livereload-1.2.2.tgz",
+  "_shasum": "67caafbbed1e7294ba5a70d9cec83f7f434186c0",
+  "_spec": "cordova-plugin-livereload",
+  "_where": "/Users/geosparkdevice/Documents/cordova/CordovaExample",
+  "author": {
+    "name": "Omar Mefire",
+    "email": "omefire@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/omefire/cordova-plugin-livereload/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-livereload",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "dependencies": {
+    "browser-sync": "2.7.13",
+    "cheerio": "0.19.0",
+    "elementtree": "0.1.6",
+    "glob": "5.0.15",
+    "lodash.merge": "3.3.2",
+    "ncp": "2.0.x",
+    "nopt": "3.0.4",
+    "npm": "^2.10.x",
+    "plist": "1.1.0",
+    "properties-parser": "0.2.3",
+    "q": "1.0.1",
+    "semver": "^4.3.x",
+    "shelljs": "0.3.0",
+    "underscore": "1.7.0"
+  },
+  "deprecated": false,
+  "description": "Cordova Plugin to facilitate livereload workflow",
+  "homepage": "https://github.com/omefire/cordova-plugin-livereload#readme",
+  "id": "cordova-plugin-livereload",
+  "keywords": [
+    "cordova",
+    "livereload",
+    "live-reload",
+    "live reload",
+    "devicesync",
+    "device-sync",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "name": "cordova-plugin-livereload",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omefire/cordova-plugin-livereload.git"
+  },
+  "version": "1.2.2"
+}

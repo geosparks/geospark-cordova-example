@@ -1,0 +1,16 @@
+PODS:
+  - GeoSpark (0.0.18)
+
+DEPENDENCIES:
+  - GeoSpark
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - GeoSpark
+
+SPEC CHECKSUMS:
+  GeoSpark: 9f8c0e7328332fd1690d7a12861b42eb4faf19fc
+
+PODFILE CHECKSUM: e03b83a02654dd808e6bd0e159523e0253aab439
+
+COCOAPODS: 1.8.4

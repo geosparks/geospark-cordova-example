@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+         <meta http-equiv="Content-Security-Policy" content="script-src * data: https://ssl.gstatic.com 'unsafe-inline' 'unsafe-eval';">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>GeoSpark Example</title>
+         <style>
+
+        .user{ 
+            background-color: #1c87c9;
+            width: 100%;
+            padding: 12px 20px;
+            color: white;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; 
+            font-size: 16px;
+        }
+
+        .user[disabled]{ 
+            background-color: #E0E0E0;
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            color: black;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .btn-group button {
+            background-color: #1c87c9;
+            width: 50%;        
+            float: left; /* Float the buttons side by side */
+            padding: 12px 20px;
+            color: white;
+            margin: 10px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; 
+            padding: 10px 24px; /* Some padding */
+            font-size: 16px;
+        }
+
+        .track{ 
+            background-color: #1c87c9;
+            width: 50%;
+            padding: 12px 20px;
+            color: white;
+            margin: 10px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; 
+            padding: 10px 24px; /* Some padding */
+            font-size: 16px;
+        }
+
+        .track[disabled]{ 
+            background-color: #E0E0E0;
+            width: 50%;
+            padding: 12px 20px;
+            margin: 10px 0;
+            color: black;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            padding: 10px 24px; /* Some padding */
+            font-size: 16px;
+        }
+
+
+        input[type=text], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        div {
+            border-radius: 5px;
+            background-color: #ffffff;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .label {
+            color: black;
+            padding: 8;
+            font-size: 15px;
+            font-family: Arial; 
+        }
+
+        other {
+            background-color: #000000; 
+            color: black;
+        }
+
+
+        header{
+            height:35px;
+            background-color:#1c87c9;
+            color: #ffffff;
+            padding: 10px;
+            font-size: 16px;
+            display: flex;
+        }
+
+        header p{
+               margin:10px;
+        }
+
+        </style>
+    </head>
+    <body>
+    <header><p>Cordova Example</p></header>   
+    <div>
+    <input type="text" id="dname" name="description" placeholder="Enter description">
+    </div>
+    <div>
+    <button class="user" id="createUserBtn" onclick="app.createUser()">Create User</button>
+    </div>
+    <div>
+    <button class="user" id="setDescBtn" onclick="app.setDescription()">Set Description</button>
+    </div>
+    <div>
+    <input type="text" id="usrId" name="userId" placeholder="Enter userId">
+    </div>
+    <div>
+    <button class="user" id="getUserBtn" onclick="app.getUser()">Get User</button>
+    </div>
+    <div>
+        <span class="label other" id="userIdlabel"></span>
+    </div>
+    <div class="btn-group">
+       <button class="track" id="startTrackBtn" onclick="app.startTracking()">Start Tracking</button>
+       <button class="track" id="stopTrackBtn" onclick="app.stopTracking()">Stop Tracking</button>
+    </div>
+    <div>
+    <button class="user" onclick="app.checkLocationPermission()">Get Current Location</button>
+    </div>
+      <div>
+    <button class="user" onclick="app.updateCurrentLocation()">Update Current Location</button>
+    </div>
+     <div>
+    <button class="user" id="tripBtn" onclick="app.trip()">Trip</button>
+    </div>
+    <div>
+    <button class="user" id="logoutBtn" onclick="app.logout()">Logout</button>
+    </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

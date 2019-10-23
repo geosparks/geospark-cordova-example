@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		01BB469B02288D8F56DF6AB33C0C120F /* GeoSpark */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1F1EEE9F716D996B08EC8038C7008D2E /* Build configuration list for PBXAggregateTarget "GeoSpark" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = GeoSpark;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		14AB9C551AA37977D7E293DC6AA1362E /* Pods-CordovaExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C08CCF1319A5E45C505BC03B8C341D1E /* Pods-CordovaExample-dummy.m */; };
+		6B2B0FD6342EC81887E2A6D4E0B7BB31 /* Pods-CordovaExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 21B5792201608111211CBC761E0F0204 /* Pods-CordovaExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D586D403DC78485FA26C520118EEC97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE3E06658EEE1C6408E66894FCF10E79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01BB469B02288D8F56DF6AB33C0C120F;
+			remoteInfo = GeoSpark;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		21B5792201608111211CBC761E0F0204 /* Pods-CordovaExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CordovaExample-umbrella.h"; sourceTree = "<group>"; };
+		300E84C0DEB64B0FFEC51B812B808A42 /* Pods-CordovaExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CordovaExample.debug.xcconfig"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4D7092B828E6CF91E1E8B7B9F1C8B3F1 /* Pods-CordovaExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CordovaExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		59DAC99BFA7B6354D1DE49F5FAB61E0F /* Pods-CordovaExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CordovaExample.modulemap"; sourceTree = "<group>"; };
+		896759E448E6A0B7279B886CE10EA5CC /* Pods-CordovaExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CordovaExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		980DCD4E27D5ECD0F84B826F1DB33731 /* Pods-CordovaExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CordovaExample-frameworks.sh"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A72A1F7B8C6476F9F553EF1DCDF66037 /* Pods_CordovaExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CordovaExample.framework; path = "Pods-CordovaExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA2D61BAA157B19BF1E9A7E41BA7FCE4 /* Pods-CordovaExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CordovaExample-Info.plist"; sourceTree = "<group>"; };
+		AFEE11A54BE9519E952D6B8D723F4206 /* Pods-CordovaExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CordovaExample.release.xcconfig"; sourceTree = "<group>"; };
+		C08CCF1319A5E45C505BC03B8C341D1E /* Pods-CordovaExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CordovaExample-dummy.m"; sourceTree = "<group>"; };
+		E3EA5305164C508BF76B0FFCC6098BCA /* GeoSpark.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GeoSpark.xcconfig; sourceTree = "<group>"; };
+		EB577C89CB59A86FA9602B1CAAC00182 /* GeoSpark.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GeoSpark.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8F9C94FDACA929028306F1736682AB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D586D403DC78485FA26C520118EEC97 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E57C70817EB3586D50AB0AA9899166D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB577C89CB59A86FA9602B1CAAC00182 /* GeoSpark.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77F4450E46F415C876D5D7C31FDF0A80 /* GeoSpark */ = {
+			isa = PBXGroup;
+			children = (
+				4E57C70817EB3586D50AB0AA9899166D /* Frameworks */,
+				BFEB62AE48AFE328BA1A0A181ADAF35A /* Support Files */,
+			);
+			name = GeoSpark;
+			path = GeoSpark;
+			sourceTree = "<group>";
+		};
+		8BB592A8198960D9D82611E12D2E7DD7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6385F53DDDAB4FF787419CE2E4A09E1 /* Pods-CordovaExample */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A5DA2722FC30235B184FB908696B7C5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77F4450E46F415C876D5D7C31FDF0A80 /* GeoSpark */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BFEB62AE48AFE328BA1A0A181ADAF35A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E3EA5305164C508BF76B0FFCC6098BCA /* GeoSpark.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GeoSpark";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				A5DA2722FC30235B184FB908696B7C5D /* Pods */,
+				E09D552CCBF9CDDBA16E271EC14DEE0D /* Products */,
+				8BB592A8198960D9D82611E12D2E7DD7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E09D552CCBF9CDDBA16E271EC14DEE0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A72A1F7B8C6476F9F553EF1DCDF66037 /* Pods_CordovaExample.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6385F53DDDAB4FF787419CE2E4A09E1 /* Pods-CordovaExample */ = {
+			isa = PBXGroup;
+			children = (
+				59DAC99BFA7B6354D1DE49F5FAB61E0F /* Pods-CordovaExample.modulemap */,
+				896759E448E6A0B7279B886CE10EA5CC /* Pods-CordovaExample-acknowledgements.markdown */,
+				4D7092B828E6CF91E1E8B7B9F1C8B3F1 /* Pods-CordovaExample-acknowledgements.plist */,
+				C08CCF1319A5E45C505BC03B8C341D1E /* Pods-CordovaExample-dummy.m */,
+				980DCD4E27D5ECD0F84B826F1DB33731 /* Pods-CordovaExample-frameworks.sh */,
+				AA2D61BAA157B19BF1E9A7E41BA7FCE4 /* Pods-CordovaExample-Info.plist */,
+				21B5792201608111211CBC761E0F0204 /* Pods-CordovaExample-umbrella.h */,
+				300E84C0DEB64B0FFEC51B812B808A42 /* Pods-CordovaExample.debug.xcconfig */,
+				AFEE11A54BE9519E952D6B8D723F4206 /* Pods-CordovaExample.release.xcconfig */,
+			);
+			name = "Pods-CordovaExample";
+			path = "Target Support Files/Pods-CordovaExample";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E05A70347C229C5AC4756445EB4C1764 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B2B0FD6342EC81887E2A6D4E0B7BB31 /* Pods-CordovaExample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D9D1C37BCF7A4CC2FA0598989A00E0C6 /* Pods-CordovaExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F5B7B81E11537394B92D06F46DD65EB /* Build configuration list for PBXNativeTarget "Pods-CordovaExample" */;
+			buildPhases = (
+				E05A70347C229C5AC4756445EB4C1764 /* Headers */,
+				30D539DD573F85AB1B10C80C226CDD99 /* Sources */,
+				F8F9C94FDACA929028306F1736682AB5 /* Frameworks */,
+				755D9ADBC5A84CF0CC12249CFEFA514A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80A92889F3F69A16DCA438EA4CB5F573 /* PBXTargetDependency */,
+			);
+			name = "Pods-CordovaExample";
+			productName = "Pods-CordovaExample";
+			productReference = A72A1F7B8C6476F9F553EF1DCDF66037 /* Pods_CordovaExample.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = E09D552CCBF9CDDBA16E271EC14DEE0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01BB469B02288D8F56DF6AB33C0C120F /* GeoSpark */,
+				D9D1C37BCF7A4CC2FA0598989A00E0C6 /* Pods-CordovaExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		755D9ADBC5A84CF0CC12249CFEFA514A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30D539DD573F85AB1B10C80C226CDD99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14AB9C551AA37977D7E293DC6AA1362E /* Pods-CordovaExample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		80A92889F3F69A16DCA438EA4CB5F573 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GeoSpark;
+			target = 01BB469B02288D8F56DF6AB33C0C120F /* GeoSpark */;
+			targetProxy = FE3E06658EEE1C6408E66894FCF10E79 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3038D535B6EB05AA44A4BCFAC88D85A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 300E84C0DEB64B0FFEC51B812B808A42 /* Pods-CordovaExample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CordovaExample/Pods-CordovaExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CordovaExample/Pods-CordovaExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		42D1E732039AA7060BDD85EA5B3872EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFEE11A54BE9519E952D6B8D723F4206 /* Pods-CordovaExample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CordovaExample/Pods-CordovaExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CordovaExample/Pods-CordovaExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		756FDEA84E67F1B9E55283067CD1A463 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3EA5305164C508BF76B0FFCC6098BCA /* GeoSpark.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C564D969A55F19128CE27A827497DDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3EA5305164C508BF76B0FFCC6098BCA /* GeoSpark.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F1EEE9F716D996B08EC8038C7008D2E /* Build configuration list for PBXAggregateTarget "GeoSpark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				756FDEA84E67F1B9E55283067CD1A463 /* Debug */,
+				8C564D969A55F19128CE27A827497DDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F5B7B81E11537394B92D06F46DD65EB /* Build configuration list for PBXNativeTarget "Pods-CordovaExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3038D535B6EB05AA44A4BCFAC88D85A8 /* Debug */,
+				42D1E732039AA7060BDD85EA5B3872EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

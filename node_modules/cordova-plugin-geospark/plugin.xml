@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin 
+	id="cordova-plugin-geospark" 
+	version="1.0.0" 
+	xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<name>geospark</name>
+	<js-module name="geospark" src="www/geospark.js">
+		<clobbers target="cordova.plugins.geospark" />
+	</js-module>
+
+	<!-- Android configuration -->
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="geospark">
+				<param name="android-package" value="com.geospark.cordova.GeoSparkPlugin" />
+			</feature>
+		</config-file>
+		<config-file parent="/*" target="AndroidManifest.xml">
+			<uses-permission android:name="android.permission.INTERNET" />
+    		<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
+    		<uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+    		<uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+    		<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    		<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    		<uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    		<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    		<uses-permission android:name="android.location.GPS_ENABLED_CHANGE" />
+    		<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    		<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    		<uses-permission android:name="android.permission.WAKE_LOCK" />
+    		<uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    		<uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    		<uses-feature android:name="android.hardware.location.gps" />
+		</config-file>
+
+		<source-file src="src/android/GeoSparkPlugin.java" target-dir="src/com/geospark/cordova/" />
+		 <!-- Gradle -->
+	<framework custom="true" src="src/android/geospark-sdk.gradle" type="gradleReference" />
+	</platform>
+
+	<!-- iOS configuration -->
+	<platform name="ios">
+	<js-module name="geospark" src="www/geospark.js">
+    <clobbers target="cordova.plugins.geospark" />
+    </js-module>
+	<config-file target="config.xml" parent="/*">
+			<feature name="geospark">
+				<param name="ios-package" value="GeoSparkWrapper" onload="true" />
+            </feature>
+    </config-file>
+	<source-file src="src/ios/GeoSparkWrapper.swift" />
+		<podspec>
+		<config>
+			<source url="https://github.com/CocoaPods/Specs.git"/>
+		</config>
+		<pods use-frameworks="true">
+			<pod name="GeoSpark"/>
+		</pods>
+		</podspec>	
+    </platform>
+</plugin>

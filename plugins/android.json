@@ -1,0 +1,33 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.cordova.development"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.cordova.development"
+    },
+    "cordova-plugin-spinner-dialog": {
+      "PACKAGE_NAME": "com.cordova.development"
+    },
+    "cordova-plugin-spinner": {
+      "PACKAGE_NAME": "com.cordova.development"
+    },
+    "cordova-plugin-headercolor": {
+      "PACKAGE_NAME": "com.cordova.development"
+    },
+    "cordova-plugin-native-spinner": {
+      "PACKAGE_NAME": "com.cordova.development"
+    },
+    "cordova-plugin-geospark": {
+      "PACKAGE_NAME": "com.cordova.development"
+    }
+  },
+  "dependent_plugins": {}
+}
