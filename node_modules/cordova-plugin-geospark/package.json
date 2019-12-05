@@ -1,8 +1,8 @@
 {
   "_from": "cordova-plugin-geospark",
-  "_id": "cordova-plugin-geospark@1.0.0",
+  "_id": "cordova-plugin-geospark@1.0.1",
   "_inBundle": false,
-  "_integrity": "sha512-PAUtKmQzUmVVgy21hxx4OzRhiV/kKNgsEfDbImpf4DfDnxDSHkn57PfAJ01WdGDS40KoARYAcJY4yGlmWDqlsA==",
+  "_integrity": "sha512-i4/w5ML/H+RebZVs+63XlbGwcibYTIRa7dKAhHVQSDZo8/bWDnuwV/YJI2utUdii6OURsMh5bU1lt1E6D9bhjA==",
   "_location": "/cordova-plugin-geospark",
   "_phantomChildren": {},
   "_requested": {
@@ -19,10 +19,10 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/cordova-plugin-geospark/-/cordova-plugin-geospark-1.0.0.tgz",
-  "_shasum": "38af031e636ecd9b8f4814862c0745cdf2d6a5ea",
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-geospark/-/cordova-plugin-geospark-1.0.1.tgz",
+  "_shasum": "ef112613936c64e064df59e914ee53bfdd08da94",
   "_spec": "cordova-plugin-geospark",
-  "_where": "/Users/ekambaram/Projects/GeoSpark_Cordova/CordovaExample",
+  "_where": "/Users/ekambaram/GitHub/geospark-cordova-example",
   "bugs": {
     "url": "https://github.com/geosparks/cordova-plugin-geospark/issues"
   },
@@ -50,5 +50,5 @@
     "type": "git",
     "url": "git+https://github.com/geosparks/cordova-plugin-geospark.git"
   },
-  "version": "1.0.0"
+  "version": "1.0.1"
 }

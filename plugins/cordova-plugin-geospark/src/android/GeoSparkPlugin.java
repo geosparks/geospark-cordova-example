@@ -528,12 +528,12 @@ public class GeoSparkPlugin extends CordovaPlugin {
         return "DENIED";
     }
 
-    private static String jsonLocation(Location location) throws JSONException {
+    private static JSONObject jsonLocation(Location location) throws JSONException {
         JSONObject obj = new JSONObject();
         obj.put("latitude", location.getLatitude());
         obj.put("longitude", location.getLongitude());
         obj.put("accuracy", location.getAccuracy());
-        return obj.toString();
+        return obj;
     }
 
     @Override
@@ -581,7 +581,7 @@ public class GeoSparkPlugin extends CordovaPlugin {
                 obj.put("userId", geoSparkUser.getUserId());
                 obj.put("location", jsonLocation(location));
                 obj.put("activity", activity);
-                PluginResult pluginResult = new PluginResult(PluginResult.Status.OK, obj);
+                PluginResult pluginResult = new PluginResult(PluginResult.Status.OK, obj.toString());
                 pluginResult.setKeepCallback(true);
                 eventsCallbackContext.sendPluginResult(pluginResult);
             } catch (JSONException e) {
@@ -593,15 +593,10 @@ public class GeoSparkPlugin extends CordovaPlugin {
         public void onError(Context context, GeoSparkError geoSparkError) {
             if (errorCallbackContext == null)
                 return;
-            try {
-                JSONObject obj = new JSONObject();
-                obj.put("error", new GsonBuilder().create().toJson(geoSparkError));
-                PluginResult pluginResult = new PluginResult(PluginResult.Status.OK, obj);
-                pluginResult.setKeepCallback(true);
-                errorCallbackContext.sendPluginResult(pluginResult);
-            } catch (JSONException e) {
-                errorCallbackContext.sendPluginResult(new PluginResult(PluginResult.Status.JSON_EXCEPTION));
-            }
+            String error = new GsonBuilder().create().toJson(geoSparkError);
+            PluginResult pluginResult = new PluginResult(PluginResult.Status.OK, error);
+            pluginResult.setKeepCallback(true);
+            errorCallbackContext.sendPluginResult(pluginResult);
         }
     }
 }

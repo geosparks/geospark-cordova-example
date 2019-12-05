@@ -25,9 +25,6 @@
     <feature name="SpinnerDialog">
         <param name="ios-package" value="CDVSpinnerDialog" />
     </feature>
-    <feature name="geospark">
-        <param name="ios-package" onload="true" value="GeoSparkWrapper" />
-    </feature>
     <name>CordovaExample</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
@@ -58,4 +55,7 @@
     <preference name="PageLength" value="0" />
     <preference name="PaginationBreakingMode" value="page" />
     <preference name="PaginationMode" value="unpaginated" />
+    <feature name="geospark">
+        <param name="ios-package" onload="true" value="GeoSparkWrapper" />
+    </feature>
 </widget>

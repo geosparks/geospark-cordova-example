@@ -118,19 +118,19 @@ geospark.setTrackingInMotion = function(jsonarray) {
 };
 
 geospark.onEvents = function(callback) {
-	exec((data) => { callback(data.userId, data.location, data.activity) },null, 'geospark', "onEvents", []);
+	exec( callback, null, 'geospark', "onEvents", []);
 };
 
 geospark.onError = function(callback) {
-	exec((data) => { callback(data.error) },null, 'geospark', "onError", []);
+	exec( callback, null, 'geospark', "onError", []);
 };
 
 geospark.offEvents = function() {
-	exec(null, null, 'geospark', "offEvents", []);
+	exec( null, null, 'geospark', "offEvents", []);
 };
 
 geospark.offError = function() {
-	exec(null, null, 'geospark', "offError", []);
+	exec( null, null, 'geospark', "offError", []);
 };
 
 module.exports = geospark;

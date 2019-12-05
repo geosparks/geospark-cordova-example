@@ -1,3 +1,4 @@
+cordova.define("cordova-plugin-geospark-test.geospark", function(require, exports, module) {
 var exec = require('cordova/exec');
 var geospark = {};
 
@@ -118,19 +119,20 @@ geospark.setTrackingInMotion = function(jsonarray) {
 };
 
 geospark.onEvents = function(callback) {
-	exec( callback, null, 'geospark', "onEvents", []);
+	exec((data) => { callback(data.userId, data.location, data.activity) },null, 'geospark', "onEvents", []);
 };
 
 geospark.onError = function(callback) {
-	exec( callback, null, 'geospark', "onError", []);
+	exec((data) => { callback(data.error) },null, 'geospark', "onError", []);
 };
 
 geospark.offEvents = function() {
-	exec( null, null, 'geospark', "offEvents", []);
+	exec(null, null, 'geospark', "offEvents", []);
 };
 
 geospark.offError = function() {
-	exec( null, null, 'geospark', "offError", []);
+	exec(null, null, 'geospark', "offError", []);
 };
 
 module.exports = geospark;
+});

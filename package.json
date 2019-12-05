@@ -16,7 +16,7 @@
     "cordova-android": "^8.1.0",
     "cordova-ios": "^5.0.1",
     "cordova-plugin-device": "^2.0.3",
-    "cordova-plugin-geospark": "^1.0.0",
+    "cordova-plugin-geospark": "^1.0.1",
     "cordova-plugin-headercolor": "git+https://github.com/tomloprod/cordova-plugin-headercolor.git",
     "cordova-plugin-livereload": "^1.2.2",
     "cordova-plugin-native-spinner": "^1.1.3",
@@ -33,8 +33,7 @@
       "cordova-plugin-spinner-dialog": {},
       "cordova-plugin-spinner": {},
       "cordova-plugin-headercolor": {},
-      "cordova-plugin-native-spinner": {},
-      "cordova-plugin-geospark": {}
+      "cordova-plugin-native-spinner": {}
     },
     "platforms": [
       "android"
