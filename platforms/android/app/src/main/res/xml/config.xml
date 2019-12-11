@@ -20,9 +20,6 @@
     <feature name="SpinnerDialog">
         <param name="android-package" value="com.greybax.spinnerdialog.SpinnerDialog" />
     </feature>
-    <feature name="geospark">
-        <param name="android-package" value="com.geospark.cordova.GeoSparkPlugin" />
-    </feature>
     <name>CordovaExample</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
@@ -40,4 +37,7 @@
     <allow-intent href="geo:*" />
     <allow-intent href="market:*" />
     <preference name="loglevel" value="DEBUG" />
+    <feature name="geospark">
+        <param name="android-package" value="com.geospark.cordova.GeoSparkPlugin" />
+    </feature>
 </widget>
