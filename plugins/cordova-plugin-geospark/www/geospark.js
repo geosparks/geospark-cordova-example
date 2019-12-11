@@ -102,7 +102,7 @@ geospark.stopTracking = function() {
 };
 
 geospark.isLocationTracking = function(callback) {
-     exec( callback, null,' geospark', "isLocationTracking",[]);
+     exec( callback, null,'geospark', "isLocationTracking",[]);
 };
 
 geospark.logout = function(success, error) {
