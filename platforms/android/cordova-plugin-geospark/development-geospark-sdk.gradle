@@ -7,5 +7,5 @@
  } 
 
 dependencies {
-  implementation 'com.geospark.android:geospark:2.2.3' 
+  implementation 'com.geospark.android:geospark:2.2.4' 
 }

@@ -16,12 +16,12 @@ import com.geospark.lib.callback.GeoSparkLocationCallback;
 import com.geospark.lib.callback.GeoSparkLogoutCallBack;
 import com.geospark.lib.callback.GeoSparkTripCallBack;
 import com.geospark.lib.callback.GeoSparkTripsCallBack;
-import com.geospark.lib.location.services.GeoSparkReceiver;
 import com.geospark.lib.model.GeoSparkActiveTrips;
 import com.geospark.lib.model.GeoSparkError;
 import com.geospark.lib.model.GeoSparkEvents;
 import com.geospark.lib.model.GeoSparkTrip;
 import com.geospark.lib.model.GeoSparkUser;
+import com.geospark.lib.services.GeoSparkReceiver;
 import com.google.gson.GsonBuilder;
 
 import org.apache.cordova.CallbackContext;
@@ -46,7 +46,7 @@ public class GeoSparkPlugin extends CordovaPlugin {
         super.initialize(cordova, webView);
         context = this.cordova.getActivity();
         Application application = this.cordova.getActivity().getApplication();
-        GeoSpark.initialize(application, "YOUR-PUBLISHABLE-KEY");
+        GeoSpark.initialize(application, "302a2c489b550c58837d3e56a284e2bc580ebdddc8853398f7fb6dd80800c5a6");
     }
 
     @Override

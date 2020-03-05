@@ -16,7 +16,7 @@ import com.geospark.lib.callback.GeoSparkLocationCallback;
 import com.geospark.lib.callback.GeoSparkLogoutCallBack;
 import com.geospark.lib.callback.GeoSparkTripCallBack;
 import com.geospark.lib.callback.GeoSparkTripsCallBack;
-import com.geospark.lib.location.services.GeoSparkReceiver;
+import com.geospark.lib.services.GeoSparkReceiver;
 import com.geospark.lib.model.GeoSparkActiveTrips;
 import com.geospark.lib.model.GeoSparkError;
 import com.geospark.lib.model.GeoSparkEvents;
