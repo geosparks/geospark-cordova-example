@@ -41,7 +41,7 @@ public class GeoSparkPlugin extends CordovaPlugin {
         super.initialize(cordova, webView);
         context = this.cordova.getActivity();
         Application application = this.cordova.getActivity().getApplication();
-        GeoSpark.initialize(application, "302a2c489b550c58837d3e56a284e2bc580ebdddc8853398f7fb6dd80800c5a6");
+        GeoSpark.initialize(application, "YOUR-PUBLISHABLE-KEY");
     }
 
     @Override
