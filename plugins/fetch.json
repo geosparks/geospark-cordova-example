@@ -58,7 +58,7 @@
   "cordova-plugin-geospark": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-geospark@^1.0.3"
+      "id": "cordova-plugin-geospark"
     },
     "is_top_level": true,
     "variables": {}

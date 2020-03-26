@@ -16,7 +16,7 @@
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
 		D8EAF98AC5E54C28AEFB2AF8 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DDA803B8774DB18276B526 /* CDVDevice.m */; };
 		F6B19D66D4CE408E8E87361E /* CDVSpinnerDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = C508586C2A874D9FBD7AA36D /* CDVSpinnerDialog.m */; };
-		EC5F8835A3D94D3FA85DF41E /* GeoSparkWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F2B37854724741B182882B /* GeoSparkWrapper.swift */; };
+		5895CA5AAEED4E1B8FD109F3 /* GeoSparkWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA57481CA0E4515961D7FC5 /* GeoSparkWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +71,7 @@
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		F59DD0907E8649A5AF7BFF08 /* CDVSpinnerDialog.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVSpinnerDialog.h; path = "cordova-plugin-native-spinner/CDVSpinnerDialog.h"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = CordovaExample/config.xml; sourceTree = "<group>"; };
-		77F2B37854724741B182882B /* GeoSparkWrapper.swift */ = {isa = PBXFileReference; name = "GeoSparkWrapper.swift"; path = "cordova-plugin-geospark/GeoSparkWrapper.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		0FA57481CA0E4515961D7FC5 /* GeoSparkWrapper.swift */ = {isa = PBXFileReference; name = "GeoSparkWrapper.swift"; path = "cordova-plugin-geospark/GeoSparkWrapper.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,7 +183,7 @@
 				4B3DD81C71B24826B16F54F1 /* CDVDevice.h */,
 				C508586C2A874D9FBD7AA36D /* CDVSpinnerDialog.m */,
 				F59DD0907E8649A5AF7BFF08 /* CDVSpinnerDialog.h */,
-				77F2B37854724741B182882B /* GeoSparkWrapper.swift */,
+				0FA57481CA0E4515961D7FC5 /* GeoSparkWrapper.swift */,
 			);
 			name = Plugins;
 			path = CordovaExample/Plugins;
@@ -368,7 +368,7 @@
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				D8EAF98AC5E54C28AEFB2AF8 /* CDVDevice.m in Sources */,
 				F6B19D66D4CE408E8E87361E /* CDVSpinnerDialog.m in Sources */,
-				EC5F8835A3D94D3FA85DF41E /* GeoSparkWrapper.swift in Sources */,
+				5895CA5AAEED4E1B8FD109F3 /* GeoSparkWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

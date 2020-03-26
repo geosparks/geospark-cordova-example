@@ -21,16 +21,16 @@ import GeoSpark
         let pluginResult = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: status)
         self.commandDelegate.send(pluginResult, callbackId: command.callbackId)
     }
-
+    
     // Checking location permission is enable or not
-
+    
     @objc(checkLocationPermission:)
     func checkLocationPermission(command: CDVInvokedUrlCommand) {
         let status = self.permissionStatus(GeoSpark.isLocationEnabled())
         let pluginResult = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: status)
         self.commandDelegate.send(pluginResult, callbackId: command.callbackId)
     }
-
+    
     // Requesting Core Location permission
     
     @objc(requestLocationPermission:)
@@ -86,7 +86,7 @@ import GeoSpark
             self.commandDelegate.send(pluginResult, callbackId: command.callbackId)
         }
     }
-
+    
     // Events
     
     @objc(toggleEvents:)
@@ -94,7 +94,7 @@ import GeoSpark
         let toggleEvents = (command.arguments[0] as? Bool)!
         let toggleEvent1 = (command.arguments[1] as? Bool)!
         let toggleEvent2 = (command.arguments[2] as? Bool)!
-
+        
         var pluginResult : CDVPluginResult? = nil
         GeoSpark.toggleEvents(Geofence: toggleEvents, Trip: toggleEvent1, Activity: toggleEvent2, { (events) in
             let eventDict = self.eventsDictionary(events)
@@ -106,7 +106,7 @@ import GeoSpark
             self.commandDelegate.send(pluginResult, callbackId: command.callbackId)
         }
     }
-
+    
     @objc(getEventsStatus:)
     func getEventsStatus(command: CDVInvokedUrlCommand) {
         var pluginResult : CDVPluginResult? = nil
@@ -120,7 +120,7 @@ import GeoSpark
             self.commandDelegate.send(pluginResult, callbackId: command.callbackId)
         }
     }
-
+    
     
     // Trip
     
@@ -129,7 +129,7 @@ import GeoSpark
         let tripId = command.arguments[0] as? String
         let tripDesc = command.arguments[1] as? String ?? ""
         var pluginResult : CDVPluginResult? = nil
-
+        
         GeoSpark.startTrip(tripId!, tripDesc, { (trip) in
             pluginResult = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: trip.msg)
             self.commandDelegate.send(pluginResult, callbackId: command.callbackId)
@@ -139,52 +139,52 @@ import GeoSpark
             self.commandDelegate.send(pluginResult, callbackId: command.callbackId)
         }
     }
-
+    
     @objc(resumeTrip:)
     func resumeTrip(command: CDVInvokedUrlCommand) {
         let tripId = (command.arguments[0] as? String)!
         var pluginResult : CDVPluginResult? = nil
-
+        
         GeoSpark.resumeTrip(tripId, { (trip) in
             pluginResult = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: trip.msg)
-         self.commandDelegate.send(pluginResult, callbackId: command.callbackId)
-     }) { (error) in
-         let errorDict = self.errorDictionary(error)
-         pluginResult = CDVPluginResult(status: CDVCommandStatus_ERROR, messageAs: errorDict)
-         self.commandDelegate.send(pluginResult, callbackId: command.callbackId)
-     }
+            self.commandDelegate.send(pluginResult, callbackId: command.callbackId)
+        }) { (error) in
+            let errorDict = self.errorDictionary(error)
+            pluginResult = CDVPluginResult(status: CDVCommandStatus_ERROR, messageAs: errorDict)
+            self.commandDelegate.send(pluginResult, callbackId: command.callbackId)
+        }
     }
-
+    
     @objc(pauseTrip:)
     func pauseTrip(command: CDVInvokedUrlCommand) {
         let tripId = (command.arguments[0] as? String)!
-       var pluginResult : CDVPluginResult? = nil
-
-    GeoSpark.pauseTrip(tripId, { (trip) in
-        pluginResult = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: trip.msg)
-        self.commandDelegate.send(pluginResult, callbackId: command.callbackId)
-    }) { (error) in
-        let errorDict = self.errorDictionary(error)
-        pluginResult = CDVPluginResult(status: CDVCommandStatus_ERROR, messageAs: errorDict)
-        self.commandDelegate.send(pluginResult, callbackId: command.callbackId)
+        var pluginResult : CDVPluginResult? = nil
+        
+        GeoSpark.pauseTrip(tripId, { (trip) in
+            pluginResult = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: trip.msg)
+            self.commandDelegate.send(pluginResult, callbackId: command.callbackId)
+        }) { (error) in
+            let errorDict = self.errorDictionary(error)
+            pluginResult = CDVPluginResult(status: CDVCommandStatus_ERROR, messageAs: errorDict)
+            self.commandDelegate.send(pluginResult, callbackId: command.callbackId)
+        }
     }
-   }
-
+    
     @objc(endTrip:)
     func endTrip(command: CDVInvokedUrlCommand) {
         let tripId = (command.arguments[0] as? String)!
         var pluginResult : CDVPluginResult? = nil
-
-     GeoSpark.endTrip(tripId, { (trip) in
-         pluginResult = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: trip.msg)
-         self.commandDelegate.send(pluginResult, callbackId: command.callbackId)
-     }) { (error) in
-         let errorDict = self.errorDictionary(error)
-         pluginResult = CDVPluginResult(status: CDVCommandStatus_ERROR, messageAs: errorDict)
-         self.commandDelegate.send(pluginResult, callbackId: command.callbackId)
-     }
+        
+        GeoSpark.endTrip(tripId, { (trip) in
+            pluginResult = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: trip.msg)
+            self.commandDelegate.send(pluginResult, callbackId: command.callbackId)
+        }) { (error) in
+            let errorDict = self.errorDictionary(error)
+            pluginResult = CDVPluginResult(status: CDVCommandStatus_ERROR, messageAs: errorDict)
+            self.commandDelegate.send(pluginResult, callbackId: command.callbackId)
+        }
     }
-
+    
     @objc(activeTrips:)
     func activeTrips(command: CDVInvokedUrlCommand) {
         var pluginResult : CDVPluginResult? = nil
@@ -198,7 +198,7 @@ import GeoSpark
             self.commandDelegate.send(pluginResult, callbackId: command.callbackId)
         }
     }
-
+    
     // Current Location
     
     @objc(getCurrentLocation:)
@@ -216,7 +216,7 @@ import GeoSpark
         let accuracy = (command.arguments[0] as? Int)!
         GeoSpark.updateCurrentLocation(accuracy)
     }
-
+    
     // Tracking
     
     @objc(startTracking:)
@@ -235,7 +235,7 @@ import GeoSpark
         let pluginResult = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: status)
         self.commandDelegate.send(pluginResult, callbackId: command.callbackId)
     }
-
+    
     @objc(logout:)
     func logout(command: CDVInvokedUrlCommand) {
         var pluginResult : CDVPluginResult? = nil
@@ -248,7 +248,7 @@ import GeoSpark
             self.commandDelegate.send(pluginResult, callbackId: command.callbackId)
         }
     }
-
+    
     @objc(setTrackingInAppState:)
     func setTrackingInAppState(command: CDVInvokedUrlCommand) {
         let appState = command.arguments[0] as? [String]
@@ -256,7 +256,7 @@ import GeoSpark
         let pluginResult = CDVPluginResult(status: CDVCommandStatus_OK)
         self.commandDelegate.send(pluginResult, callbackId: command.callbackId)
     }
-
+    
     @objc(setTrackingInMotion:)
     func setTrackingInMotion(command: CDVInvokedUrlCommand) {
         let motionState = command.arguments[0] as? [String]
@@ -265,34 +265,34 @@ import GeoSpark
         self.commandDelegate.send(pluginResult, callbackId: command.callbackId)
     }
     
-
+    
     // Utility Methods.
     
     internal func userDictionary(_ user:GeoSparkUser) -> Dictionary<String,Any>{
-        return  ["userId":user.userId,"description":user.userDescription!]
+        return  ["userId":user.userId,"description":user.userDescription!,"activity":user.activityEvents,"geofence":user.geofenceEvents,"trip":user.tripsEvents]
     }
     
     internal func errorDictionary(_ error:GeoSparkError) -> Dictionary<String,Any>{
         return  ["errorCode":error.errorCode,"errorMessage":error.errorMessage]
     }
-
+    
     internal func activeTripArray(_ trips:GeoSparkActiveTrips) -> [Dictionary<String,Any>]{
-         var tripsData:[Dictionary<String,Any>] = []
-         for trip in trips.trips{
-             var dict:Dictionary<String,Any> = [:]
-             dict["createAt"]  = trip.createdAt
-             dict["updatedAt"] = trip.updatedAt
-             dict["started"]    = trip.isStarted
-             dict["deleted"]   = trip.isDeleted
-             dict["ended"]     = trip.isEnded
-             dict["paused"]    = trip.isPaused
-             dict["tripId"]    = trip.trip_id
-             tripsData.append(dict)
-         }
-         return tripsData
-     }
-    internal func eventsDictionary(_ events:GeoSparkEvents) -> Dictionary<String,Any>{
-        return  ["activityEventsActive":events.activityEvents,"geofenceEventsActive":events.geofenceEvents,"tripEventsActive":events.tripsEvents]
+        var tripsData:[Dictionary<String,Any>] = []
+        for trip in trips.trips{
+            var dict:Dictionary<String,Any> = [:]
+            dict["createAt"]  = trip.createdAt
+            dict["updatedAt"] = trip.updatedAt
+            dict["started"]    = trip.isStarted
+            dict["deleted"]   = trip.isDeleted
+            dict["ended"]     = trip.isEnded
+            dict["paused"]    = trip.isPaused
+            dict["tripId"]    = trip.trip_id
+            tripsData.append(dict)
+        }
+        return tripsData
+    }
+    internal func eventsDictionary(_ user:GeoSparkUser) -> Dictionary<String,Any>{
+        return  ["userId":user.userId,"description":user.userDescription!,"activity":user.activityEvents,"geofence":user.geofenceEvents,"trip":user.tripsEvents]
     }
     
     internal func permissionStatus(_ bool:Bool) ->  String{
@@ -305,7 +305,7 @@ import GeoSpark
     internal func currentLocationDictionary(_ location:GSLocation) -> Dictionary<String,Any>{
         return  ["latitude":location.latitude,"longitude":location.longitude,"accuracy":location.accuracy]
     }
-        
+    
     internal func locationStatus(_ bool:Bool) ->  String{
         if bool{
             return "ENABLED"

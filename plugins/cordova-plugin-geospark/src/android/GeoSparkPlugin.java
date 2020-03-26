@@ -8,18 +8,15 @@ import android.content.Intent;
 import android.location.Location;
 import android.os.Build;
 import android.provider.Settings;
+import android.util.Log;
 
 import com.geospark.lib.GeoSpark;
 import com.geospark.lib.callback.GeoSparkCallBack;
-import com.geospark.lib.callback.GeoSparkEventsCallback;
 import com.geospark.lib.callback.GeoSparkLocationCallback;
 import com.geospark.lib.callback.GeoSparkLogoutCallBack;
 import com.geospark.lib.callback.GeoSparkTripCallBack;
-import com.geospark.lib.callback.GeoSparkTripsCallBack;
 import com.geospark.lib.services.GeoSparkReceiver;
-import com.geospark.lib.model.GeoSparkActiveTrips;
 import com.geospark.lib.model.GeoSparkError;
-import com.geospark.lib.model.GeoSparkEvents;
 import com.geospark.lib.model.GeoSparkTrip;
 import com.geospark.lib.model.GeoSparkUser;
 import com.google.gson.GsonBuilder;
@@ -32,8 +29,6 @@ import org.apache.cordova.PluginResult;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.util.List;
 
 public class GeoSparkPlugin extends CordovaPlugin {
     private static CallbackContext eventsCallbackContext;
@@ -218,7 +213,7 @@ public class GeoSparkPlugin extends CordovaPlugin {
         permissionCallbackContext = callbackContext;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             String[] permissions = {Manifest.permission.ACTIVITY_RECOGNITION};
-            cordova.requestPermissions(this, GeoSpark.REQUEST_CODE_ACTIVITY, permissions);
+            cordova.requestPermissions(this, GeoSpark.REQUEST_CODE_ACTIVITY_PERMISSION, permissions);
         } else {
             permissionCallbackContext.sendPluginResult(new PluginResult(PluginResult.Status.OK, "UNKNOWN"));
         }
@@ -254,7 +249,7 @@ public class GeoSparkPlugin extends CordovaPlugin {
         permissionCallbackContext = callbackContext;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             String[] permissions = {Manifest.permission.ACCESS_BACKGROUND_LOCATION};
-            cordova.requestPermissions(this, GeoSpark.REQUEST_CODE_BACKGROUND_LOCATION, permissions);
+            cordova.requestPermissions(this, GeoSpark.REQUEST_CODE_BACKGROUND_LOCATION_PERMISSION, permissions);
         } else {
             permissionCallbackContext.sendPluginResult(new PluginResult(PluginResult.Status.OK, "UNKNOWN"));
         }
@@ -269,6 +264,7 @@ public class GeoSparkPlugin extends CordovaPlugin {
             @Override
             public void onSuccess(GeoSparkUser geoSparkUser) {
                 String serializedUser = new GsonBuilder().create().toJson(geoSparkUser);
+                Log.e("RESPONSE",serializedUser);
                 callbackContext.success(serializedUser);
             }
 
@@ -313,10 +309,10 @@ public class GeoSparkPlugin extends CordovaPlugin {
     }
 
     private void toggleEvents(boolean geofenceEvents, boolean tripEvents, boolean activityEvents, final CallbackContext callbackContext) {
-        GeoSpark.toggleEvents(context, geofenceEvents, tripEvents, activityEvents, new GeoSparkEventsCallback() {
+        GeoSpark.toggleEvents(context, geofenceEvents, tripEvents, activityEvents, new GeoSparkCallBack() {
             @Override
-            public void onSuccess(GeoSparkEvents geoSparkEvents) {
-                String serializedUser = new GsonBuilder().create().toJson(geoSparkEvents);
+            public void onSuccess(GeoSparkUser geoSparkUser) {
+                String serializedUser = new GsonBuilder().create().toJson(geoSparkUser);
                 callbackContext.success(serializedUser);
             }
 
@@ -329,10 +325,10 @@ public class GeoSparkPlugin extends CordovaPlugin {
     }
 
     private void getEventsStatus(final CallbackContext callbackContext) {
-        GeoSpark.getEventsStatus(context, new GeoSparkEventsCallback() {
+        GeoSpark.getEventsStatus(context, new GeoSparkCallBack() {
             @Override
-            public void onSuccess(GeoSparkEvents geoSparkEvents) {
-                String serializedUser = new GsonBuilder().create().toJson(geoSparkEvents);
+            public void onSuccess(GeoSparkUser geoSparkUser) {
+                String serializedUser = new GsonBuilder().create().toJson(geoSparkUser);
                 callbackContext.success(serializedUser);
             }
 
@@ -405,10 +401,10 @@ public class GeoSparkPlugin extends CordovaPlugin {
     }
 
     private void activeTrips(final CallbackContext callbackContext) {
-        GeoSpark.activeTrips(context, new GeoSparkTripsCallBack() {
+        GeoSpark.activeTrips(context, new GeoSparkTripCallBack() {
             @Override
-            public void onSuccess(List<GeoSparkActiveTrips> list) {
-                String serializedUser = new GsonBuilder().create().toJson(list);
+            public void onSuccess(GeoSparkTrip geoSparkTrip) {
+                String serializedUser = new GsonBuilder().create().toJson(geoSparkTrip.getGeoSparkActiveTrips());
                 callbackContext.success(serializedUser);
             }
 
@@ -543,7 +539,7 @@ public class GeoSparkPlugin extends CordovaPlugin {
             return;
         }
         switch (requestCode) {
-            case GeoSpark.REQUEST_CODE_ACTIVITY:
+            case GeoSpark.REQUEST_CODE_ACTIVITY_PERMISSION:
                 permissionCallbackContext.sendPluginResult(new PluginResult(PluginResult.Status.OK, permissionsStatus(GeoSpark.checkActivityPermission(context))));
                 break;
 
@@ -551,7 +547,7 @@ public class GeoSparkPlugin extends CordovaPlugin {
                 permissionCallbackContext.sendPluginResult(new PluginResult(PluginResult.Status.OK, permissionsStatus(GeoSpark.checkLocationPermission(context))));
                 break;
 
-            case GeoSpark.REQUEST_CODE_BACKGROUND_LOCATION:
+            case GeoSpark.REQUEST_CODE_BACKGROUND_LOCATION_PERMISSION:
                 permissionCallbackContext.sendPluginResult(new PluginResult(PluginResult.Status.OK, permissionsStatus(GeoSpark.checkBackgroundLocationPermission(context))));
                 break;
         }
